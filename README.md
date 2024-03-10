@@ -1,8 +1,8 @@
 # vasp-installation
 # first step ( installing fortran and c compilers)
-I suggest instaling intel parallel studio//
-in order to install it on linux OS first you need installation files :)
-Intel_Parallel_Studio_XE_2019 (recommended/)
+I suggest instaling intel parallel studio\
+in order to install it on linux OS first you need installation files :)\
+Intel_Parallel_Studio_XE_2019 (recommended/)\
 
 sudo apt-get -y install build-essential emacs dkms synaptic g++ g++-multilib gfortran ssh openssh-server
 sudo apt-get install libgtk2.0
