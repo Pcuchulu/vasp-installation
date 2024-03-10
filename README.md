@@ -21,7 +21,9 @@ tar xvf fftw-3.3.10.tar.gz\
 make all -j\
 make install\
 
+```
 echo $IFORT_COMPILER_LIB$
+```
 
 # third step
 vim (or just any shell or non-shell based editor) to edit bash\
@@ -72,7 +74,7 @@ export LD_LIBRARY_PATH
 in vasp (5.4.1) folder you see this ::\\❣\
 ![image](https://github.com/Pcuchulu/vasp-installation/assets/100542104/4d1eca4c-749b-41cc-a807-135dc7ea484b)\
 
-copy below text in makefile.include
+copy below text in makefile.include\
 
 ```
 # Precompiler options
@@ -158,13 +160,10 @@ MPI_INC = $(I_MPI_ROOT)/include64/
     make std gam ncl
 
 in order to make cd to the folder including makefile.include
- then add 
- export PATH="/home/p/Vienna Ab initio Simulation Package (VASP) 5.4.4 Source Code 2018-03-06/vasp.5.4.4/bin:$PATH"
+ then add\
+ export PATH="/home/p/Vienna Ab initio Simulation Package (VASP) 5.4.4 Source Code 2018-03-06/vasp.5.4.4/bin:$PATH"\
 
-
-
-
-enjoy using \.😍😍
-mpirun -np 2 vasp_std
+enjoy using 😍😍\
+mpirun -np 2 vasp_std\
 
 done🙄🙄
