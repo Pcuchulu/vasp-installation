@@ -167,3 +167,6 @@ enjoy using 😍😍\
 mpirun -np 2 vasp_std\
 
 done🙄🙄
+
+
+contact : [@plucky](https://t.me/plucky13)https://t.me/plucky13
