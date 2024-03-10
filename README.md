@@ -1,6 +1,6 @@
 # vasp-installation
 # first step ( installing fortran and c compilers)
-I suggest instaling intel parallel studio
+I suggest instaling intel parallel studio//
 in order to install it on linux OS first you need installation files :)
 Intel_Parallel_Studio_XE_2019 (recommended/)
 
