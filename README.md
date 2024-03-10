@@ -2,31 +2,32 @@
 # first step ( installing fortran and c compilers)
 I suggest instaling intel parallel studio\
 in order to install it on linux OS first you need installation files :)\
-Intel_Parallel_Studio_XE_2019 (recommended/)\
+Intel_Parallel_Studio_XE_2019 (recommended/)
 
-sudo apt-get -y install build-essential emacs dkms synaptic g++ g++-multilib gfortran ssh openssh-server
-sudo apt-get install libgtk2.0
-sudo apt update
-sudo apt upgrade
-sudo ./install_GUI.sh 
-after installation check if installed (which mpirun (must be /opt/intel/impi/2019.5.281/intel64/bin/mpirun))
+sudo apt-get -y install build-essential emacs dkms synaptic g++ g++-multilib gfortran ssh openssh-server\
+sudo apt-get install libgtk2.0\
+sudo apt update\
+sudo apt upgrade\
+sudo ./install_GUI.sh\
+after installation check if installed (which mpirun (must be /opt/intel/impi/2019.5.281/intel64/bin/mpirun))\
 
 # seccond step ( installing fftw lib)
-sudo mkdir /mirror
-sudo chown user:user /mirror/
-wget https://www.fftw.org/fftw-3.3.10.tar.gz
-cd fftw-3.3.10/
-tar xvf fftw-3.3.10.tar.gz
-./configure --prefix=/mirror/fftw3 BLAS_LIBS="$MKL" LAPACK_LIBS="$MKL" FFT_LIBS="-L$FFTW_LIB -lfftw3f" INCLUDEFFTW="$FFTW_INC"
-make all -j
-make install
+sudo mkdir /mirror\
+sudo chown user:user /mirror/\
+wget https://www.fftw.org/fftw-3.3.10.tar.gz\
+cd fftw-3.3.10/\
+tar xvf fftw-3.3.10.tar.gz\
+./configure --prefix=/mirror/fftw3 BLAS_LIBS="$MKL" LAPACK_LIBS="$MKL" FFT_LIBS="-L$FFTW_LIB -lfftw3f" INCLUDEFFTW="$FFTW_INC"\
+make all -j\
+make install\
 
 echo $IFORT_COMPILER_LIB$
 
 # third step
-vim (or just any shell or non-shell based editor) to edit bash
-add below lines to bash
+vim (or just any shell or non-shell based editor) to edit bash\
+add below lines to bash\
 
+```
 ################################################# for inel2019
 #############################################for intel
 
@@ -65,10 +66,11 @@ export LD_LIBRARY_PATH
 LD_LIBRARY_PATH="/opt/intel/mkl/lib/intel64_lin:$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH
 ################################################## end intel
+```
 
 # forth step
-in vasp (5.4.1) folder you see this ::\\❣
-![image](https://github.com/Pcuchulu/vasp-installation/assets/100542104/4d1eca4c-749b-41cc-a807-135dc7ea484b)
+in vasp (5.4.1) folder you see this ::\\❣\
+![image](https://github.com/Pcuchulu/vasp-installation/assets/100542104/4d1eca4c-749b-41cc-a807-135dc7ea484b)\
 
 copy below text in makefile.include
 
